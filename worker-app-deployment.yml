@@ -18,10 +18,5 @@ spec:
         app: demo-voting-app
     spec:
       containers:
-<<<<<<< Updated upstream
-        - name: worker-app1
-          image: dockersamples/examplevotingapp_worker
-=======
         - name: worker-app
-          image: dockersamples/examplevotingapp_worker 
->>>>>>> Stashed changes
+          image: dockersamples/examplevotingapp_worker
