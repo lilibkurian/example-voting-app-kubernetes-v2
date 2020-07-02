@@ -27,3 +27,10 @@ spec:
               value: postgres
           ports:
             - containerPort: 5432
+              name: postgres
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: db-data
+          volumes:
+            - name: db-data
+              emptyDir: {}
